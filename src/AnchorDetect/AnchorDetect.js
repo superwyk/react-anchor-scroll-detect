@@ -150,6 +150,7 @@ export default class DetectAnchor extends PureComponent {
             } else {
                 scrollTo(this.props.container, Math.ceil(offset - this.props.offsetTop));
                 this.flag = true;
+                this.scheduledAnimationFrame = false;
             }
         };
         // window.requestAnimationFrame(frameFunc);
